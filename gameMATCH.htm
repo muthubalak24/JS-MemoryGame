@@ -1,0 +1,134 @@
+﻿   <html>
+   <body>
+
+	<button onclick="buttonone('no1')"    bval="7" id="no1">-</button>
+	<button onclick="buttonone('no2')"    bval="8" id="no2">-</button>
+	<button onclick="buttonone('no3')"    bval="4" id="no3">-</button>
+	<button onclick="buttonone('no4')"    bval="3" id="no4">-</button>
+        <button onclick="buttonone('no5')"    bval="5" id="no5">-</button>
+	<button onclick="buttonone('no6')"    bval="3" id="no6">-</button><br>
+	<button onclick="buttonone('no7')"    bval="1" id="no7">-</button>
+	<button onclick="buttonone('no8')"    bval="4" id="no8">-</button>
+	<button onclick="buttonone('no9')"    bval="8" id="no9">-</button>
+	<button onclick="buttonone('no10')"   bval="2" id="no10">-</button>
+	<button onclick="buttonone('no11')"   bval="9" id="no11">-</button>
+	<button onclick="buttonone('no12')"   bval="7" id="no12">-</button><br>
+	<button onclick="buttonone('no13')"   bval="1" id="no13">-</button>
+        <button onclick="buttonone('no14')"   bval="6" id="no14">-</button>
+	<button onclick="buttonone('no15')"   bval="5" id="no15">-</button>
+	<button onclick="buttonone('no16')"   bval="6" id="no16">-</button>
+	<button onclick="buttonone('no17')"   bval="9" id="no17">-</button>
+	<button onclick="buttonone('no18')"   bval="2" id="no18">-</button><br>
+	<p> score :</p><p id="scoreident">0</p> 
+	 
+	<p id="demo"></p>
+	<script>
+	   var first=0;
+	   var second=0;
+	   var track = 0;
+	   var idfirst;
+	   
+	   function buttonone(idvalue)
+		{
+		   //alert(x);
+		   track=track+1;
+ 
+		   if(track%2==1){
+				let text="";
+				for (let i=1; i < 19; i++){
+					text = "no"+i;
+					//alert(text);
+					document.getElementById(text).innerHTML="-";
+					//alert(i);
+		   }
+
+		   
+
+
+			
+		   }
+		   if((track%2)==1){
+			first=document.getElementById(idvalue).getAttribute("bval");
+			idfirst=idvalue;
+		   }
+		   if((track%2)==0){
+			second=document.getElementById(idvalue).getAttribute("bval");
+		   }
+		   if((track%2)==0){
+			if(first==second){
+			//alert("2 boxes matched");
+			
+			
+			document.getElementById(idvalue).disabled=true;
+			document.getElementById(idfirst).disabled=true;
+			var newval=parseInt(document.getElementById("scoreident").innerHTML);
+			document.getElementById("scoreident").innerHTML=newval+1;	
+			alert(newval+1);
+			
+		   }else{
+			//alert("not matched");
+		   }
+
+		   }
+
+		    var x=document.getElementById(idvalue).getAttribute("bval");
+		    document.getElementById(idvalue).innerHTML=x;
+                    
+		    
+		  }		
+
+	   	</script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+                        document.getElementById("noone").innerHTML="-";
+		        document.getElementById("notwo").innerHTML="-";
+			document.getElementById("nothree").innerHTML="-";
+			document.getElementById("nofour").innerHTML="-";
+			document.getElementById("nofive").innerHTML="-";
+		        document.getElementById("nosix").innerHTML="-";
+			document.getElementById("noseven").innerHTML="-";
+			document.getElementById("noeight").innerHTML="-";
+			document.getElementById("nonine").innerHTML="-";
+		        document.getElementById("noten").innerHTML="-";
+			document.getElementById("noeleven").innerHTML="-";
+			document.getElementById("notwelve").innerHTML="-";
+			document.getElementById("nothirdtn").innerHTML="-";
+		        document.getElementById("nofourtn").innerHTML="-";
+			document.getElementById("nofiftn").innerHTML="-";
+			document.getElementById("nosixtn").innerHTML="-";
+			document.getElementById("noseventn").innerHTML="-";
+		        document.getElementById("noeightn").innerHTML="-";
+
+
+
+
+
+
+
